@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Menu Form</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Add a Menu Item</h1>
+        <form action="process_form.php" method="POST">
+            <div class="form-group">
+                <label for="itemName">Item Name:</label>
+                <input type="text" class="form-control" id="itemName" name="itemName" required>
+            </div>
+            <div class="form-group">
+                <label for="itemDescription">Item Description:</label>
+                <textarea class="form-control" id="itemDescription" name="itemDescription" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
